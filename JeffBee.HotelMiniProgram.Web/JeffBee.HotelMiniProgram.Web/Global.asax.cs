@@ -20,7 +20,11 @@ namespace JeffBee.HotelMiniProgram.Web
             BundleConfig.RegisterBundles(BundleTable.Bundles);
 
             //获取配置文件数据库连接字符串
-            ApplicationParms.ConnectionString = ConfigurationManager.ConnectionStrings["connection"].ConnectionString;
+            //ApplicationParms.ConnectionString = ConfigurationManager.ConnectionStrings["connection"].ConnectionString;
+
+            //获取本项目的db
+            ApplicationParms.ConnectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Persist Security Info=False;Data Source="+AppDomain.CurrentDomain.BaseDirectory+ "/DB/Hotel.accdb;";
+
         }
     }
 }
