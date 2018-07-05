@@ -4,12 +4,12 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{3C78EC86-62DD-4C74-9522-8F693EFB0F3A}</ProjectGuid>
+    <ProjectGuid>{FD717B7A-B7BF-4C74-81B6-5ED111444B28}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>JeffBee.HotelMiniProgram.Dal</RootNamespace>
-    <AssemblyName>JeffBee.HotelMiniProgram.Dal</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <RootNamespace>glTech.Framework.Log</RootNamespace>
+    <AssemblyName>glTech.Framework.Log</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -30,8 +30,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DapperExtensions">
-      <HintPath>..\packages\DapperExtensions.1.6.3\lib\net45\DapperExtensions.dll</HintPath>
+    <Reference Include="log4net, Version=1.2.15.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.2.0.5\lib\net40-full\log4net.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -39,27 +40,21 @@
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
-    <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BaseDal.cs" />
-    <Compile Include="HotelInfoDal.cs" />
+    <Compile Include="InvalidLogException.cs" />
+    <Compile Include="Logger.cs" />
+    <Compile Include="LoggingInitializationException.cs" />
+    <Compile Include="LoggingLevel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\glTech.Framework.Log\JeffBee.HotelMiniProgram.Log.csproj">
-      <Project>{fd717b7a-b7bf-4c74-81b6-5ed111444b28}</Project>
-      <Name>JeffBee.HotelMiniProgram.Log</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\JeffBee.HotelMiniProgram.Global\JeffBee.HotelMiniProgram.Global.csproj">
-      <Project>{040d75ea-e239-4f43-ab5d-0b455eca5a8f}</Project>
-      <Name>JeffBee.HotelMiniProgram.Global</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\JeffBee.HotelMiniProgram.Model\JeffBee.HotelMiniProgram.Model.csproj">
-      <Project>{3951ED53-75A3-4C31-B4CB-DF2A5FB79E31}</Project>
-      <Name>JeffBee.HotelMiniProgram.Model</Name>
-    </ProjectReference>
+    <None Include="Config\log4net.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Readme.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

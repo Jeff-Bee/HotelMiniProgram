@@ -7,8 +7,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{D62DE598-9
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JeffBee.HotelMiniProgram.Global", "JeffBee.HotelMiniProgram.Global\JeffBee.HotelMiniProgram.Global.csproj", "{040D75EA-E239-4F43-AB5D-0B455ECA5A8F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JeffBee.HotelMiniProgram.Log", "..\..\文档\20180705\Code\glTech.Framework.Log\JeffBee.HotelMiniProgram.Log.csproj", "{FD717B7A-B7BF-4C74-81B6-5ED111444B28}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JeffBee.HotelMiniProgram.Dal", "JeffBee.HotelMiniProgram.Dal\JeffBee.HotelMiniProgram.Dal.csproj", "{3C78EC86-62DD-4C74-9522-8F693EFB0F3A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JeffBee.HotelMiniProgram.Bll", "JeffBee.HotelMiniProgram.Bll\JeffBee.HotelMiniProgram.Bll.csproj", "{07A96F2D-9EEC-4AA7-9EE3-2BDBD6114611}"
@@ -18,6 +16,8 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{990B234A-4E51-4267-AA47-6E291D2048AC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JeffBee.HotelMiniProgram.Web", "JeffBee.HotelMiniProgram.Web\JeffBee.HotelMiniProgram.Web.csproj", "{F3123223-B163-41FB-BC7A-6173F53B88E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JeffBee.HotelMiniProgram.Log", "glTech.Framework.Log\JeffBee.HotelMiniProgram.Log.csproj", "{FD717B7A-B7BF-4C74-81B6-5ED111444B28}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,10 +29,6 @@ Global
 		{040D75EA-E239-4F43-AB5D-0B455ECA5A8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{040D75EA-E239-4F43-AB5D-0B455ECA5A8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{040D75EA-E239-4F43-AB5D-0B455ECA5A8F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FD717B7A-B7BF-4C74-81B6-5ED111444B28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FD717B7A-B7BF-4C74-81B6-5ED111444B28}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FD717B7A-B7BF-4C74-81B6-5ED111444B28}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FD717B7A-B7BF-4C74-81B6-5ED111444B28}.Release|Any CPU.Build.0 = Release|Any CPU
 		{3C78EC86-62DD-4C74-9522-8F693EFB0F3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{3C78EC86-62DD-4C74-9522-8F693EFB0F3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3C78EC86-62DD-4C74-9522-8F693EFB0F3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -49,16 +45,20 @@ Global
 		{F3123223-B163-41FB-BC7A-6173F53B88E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F3123223-B163-41FB-BC7A-6173F53B88E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F3123223-B163-41FB-BC7A-6173F53B88E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD717B7A-B7BF-4C74-81B6-5ED111444B28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD717B7A-B7BF-4C74-81B6-5ED111444B28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD717B7A-B7BF-4C74-81B6-5ED111444B28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD717B7A-B7BF-4C74-81B6-5ED111444B28}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{040D75EA-E239-4F43-AB5D-0B455ECA5A8F} = {D62DE598-99CE-4D04-98F7-073BDC45647E}
-		{FD717B7A-B7BF-4C74-81B6-5ED111444B28} = {D62DE598-99CE-4D04-98F7-073BDC45647E}
 		{3C78EC86-62DD-4C74-9522-8F693EFB0F3A} = {D62DE598-99CE-4D04-98F7-073BDC45647E}
 		{07A96F2D-9EEC-4AA7-9EE3-2BDBD6114611} = {D62DE598-99CE-4D04-98F7-073BDC45647E}
 		{3951ED53-75A3-4C31-B4CB-DF2A5FB79E31} = {D62DE598-99CE-4D04-98F7-073BDC45647E}
 		{F3123223-B163-41FB-BC7A-6173F53B88E3} = {990B234A-4E51-4267-AA47-6E291D2048AC}
+		{FD717B7A-B7BF-4C74-81B6-5ED111444B28} = {D62DE598-99CE-4D04-98F7-073BDC45647E}
 	EndGlobalSection
 EndGlobal

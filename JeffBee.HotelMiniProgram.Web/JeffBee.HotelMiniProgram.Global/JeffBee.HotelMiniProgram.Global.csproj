@@ -56,7 +56,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\文档\20180705\Code\glTech.Framework.Log\JeffBee.HotelMiniProgram.Log.csproj">
+    <ProjectReference Include="..\glTech.Framework.Log\JeffBee.HotelMiniProgram.Log.csproj">
       <Project>{fd717b7a-b7bf-4c74-81b6-5ed111444b28}</Project>
       <Name>JeffBee.HotelMiniProgram.Log</Name>
     </ProjectReference>
